@@ -1,6 +1,6 @@
 # You Don't Know Python Yet.
 
-This is a somewhat brief tutorial that gives you from basic information to get started with Python to iving deep into the core mechanisms of the Python Programming Language.
+This is a somewhat brief tutorial that gives you from basic information to get started with Python to diving deep into the core mechanisms of the Python Programming Language.
 
 
 ## Contributions
