@@ -12,5 +12,7 @@ Any contributions you make to this effort **are of course greatly appreciated**.
 But **PLEASE** read the [Contributions Guidelines](CONTRIBUTING.md) carefully before submitting a PR.
 
 ---
-**This series is heavily inspired by YDKJS edition 1 & 2** **[YDKJS GitHub](https://github.com/getify/You-Dont-Know-JS)**.
+| NOTE: |
+| :--- |
+**This series is heavily inspired by YDKJS edition 1 & 2** **[YDKJS GitHub](https://github.com/getify/You-Dont-Know-JS)** By **[Kyle Simpson](https://github.com/getify)**.
 
