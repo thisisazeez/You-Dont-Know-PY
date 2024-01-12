@@ -221,3 +221,205 @@ speed = 3
 anotherSpeed = speed
 ```
 
+### Arithmetic Operators
+
+In Python, which is like a special language for computers, we have something called arithmetic operators, which are like special instructions for playing with numbers.
+
+Python has a number of arithmetic operators: +, -, *, / (division), % (remainder), ** (exponentiation) and // (floor division):
+
+```py
+# Addition
+apples = 3 + 2
+
+# Subtraction
+candies = 8 - 3
+
+# Multiplication
+wheels = 4 * 4
+
+# Division
+cookies_per_friend = 10 / 2
+
+# - Can be used as a unary minus operator:
+print(-3)
+
+# + Can be used to concatenate Strings together:
+"Python" + " is the GOAT language"
+```
+You can combine assignment with arithmetic operations using compound assignment operators.
+
+```py
+# Addition and Assignment (+=)
+x = 5
+x += 3
+print(x)  # Output: 8
+
+# Subtraction and Assignment (-=)
+y = 10
+y -= 4
+print(y)  # Output: 6
+
+# Multiplication and Assignment (*=)
+z = 2
+z *= 6
+print(z)  # Output: 12
+
+# Division and Assignment (/=)
+w = 15
+w /= 3
+print(w)  # Output: 5.0
+
+# Floor Division and Assignment (//=)
+a = 17
+a //= 5
+print(a)  # Output: 3
+
+# Modulus and Assignment (%=)
+b = 11
+b %= 3
+print(b)  # Output: 2
+
+# Exponentiation and Assignment (**=)
+c = 4
+c **= 2
+print(c)  # Output: 16
+```
+
+
+
+### Extra: The "walrus operator"
+This operator allows you to assign a value to a variable as part of an expression. It's called the "walrus operator" because the := looks a bit like the eyes and tusks of a walrus `(:=)`:
+
+```py
+# Without the walrus operator
+number = 10
+if number > 5:
+    print("Number is greater than 5:", number)
+
+# With the walrus operator
+if (number := 10) > 5:
+    print("Number is greater than 5:", number)
+```
+
+The walrus operator is often used in while-loops to simplify code that involves both calculating a value and checking a condition. Here's an example:
+
+```py
+# Without the walrus operator
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = []
+for number in numbers:
+    squared = number ** 2
+    squared_numbers.append(squared)
+    if squared > 10:
+        break
+
+# With the walrus operator
+squared_numbers = []
+for number in numbers:
+    if (squared := number ** 2) > 10:
+        break
+    squared_numbers.append(squared)
+
+print("Squared numbers:", squared_numbers)
+```
+
+### Logical Operators
+In Python, logical Operators are used to perform logical operations on boolean values (True or False). There are three main logical operators: and, or, and not.
+
+```py
+temperature = 28
+is_summer = True
+is_weekend = False
+
+if (temperature > 25 and is_summer) or is_weekend:
+    print("Let's go to the beach!")
+else:
+    print("Maybe another time.")
+
+"""
+The condition (temperature > 25 and is_summer) checks if the temperature is greater than 25 degrees Celsius and it's summer.
+The condition is_weekend checks if it's the weekend.
+"""
+```
+
+### Bitwise Operators
+Bitwise operators are rarely used, only in very specific situations, they are used to work on bits and binary numbers:
+
+```py
+# AND (&)
+a = 5    # 0101 in binary
+b = 3    # 0011 in binary
+result_and = a & b # Output: 1 (binary 0001)
+
+# OR (|)
+result_or = a | b # Output: 7 (binary 0111)
+
+# XOR (^)
+result_xor = a ^ b # Output: 6 (binary 0110)
+
+# NOT (~)
+result_not_a = ~a # Output: -6 (binary 1010 in two's complement form)
+
+# Left Shift (<<)
+result_left_shift = a << 1 # Output: 10 (binary 1010)
+
+# Right Shift (>>)
+result_right_shift = a >> 1 # Output: 2 (binary 0010)
+```
+
+### Comparison Operators
+
+In Python, you can use this operator to get multiple boolean results/value:
+
+```py
+a=10
+b=20
+
+# (==) operator, if two operands are equal or not
+print(a==b)
+
+# (!=) operator, if two operands are not equal
+print(a!=b)
+
+# (>) operator, checks whether left operand is greater than right operand or not
+print(a>b)
+
+# (<) operator, checks if left operand is less than right operand or not
+print(a<b)
+
+#(>=) operator, checks if left operand is greater than or equal to right operand or not
+print(a>=b)
+
+# (<=) operator, checks whether left operand is less than or equal to right operand or not
+print(a<=b)
+```
+
+### Identity & membership Operators(in and is)
+In Python, identity operators are used to compare two objects and returns true if both are the same object.
+
+`in` is called the membership operator. Is used to tell if a value is contained in a list, or another sequence.
+
+`is` is called the identity operator. It is used to compare two objects and returns true if both are the same object.
+
+```py
+text = 'Hello, World!'
+result = 'World' in text
+print(result)  # Output: True
+
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+result = list1 is list2
+print(result)  # Output: False
+```
+
+### The Ternary Operator
+In Python, the ternary operator is used to determine if a condition is true or false and then it returns the correct value in accordance with the result. First you define the result if the condition is True, then you evaluate the condition, then you define the result if the condition is false:
+
+```<result_if_true> if <condition> else <result_if_false>```
+
+Example:
+
+```py
+def is_adult(age):
+    return True if age > 18 else False
+```
