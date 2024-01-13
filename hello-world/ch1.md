@@ -309,9 +309,9 @@ numbers = [1, 2, 3, 4, 5]
 squared_numbers = []
 for number in numbers:
     squared = number ** 2
-    squared_numbers.append(squared)
     if squared > 10:
         break
+    squared_numbers.append(squared)
 
 # With the walrus operator
 squared_numbers = []
