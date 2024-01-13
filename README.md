@@ -14,5 +14,7 @@ But **PLEASE** read the [Contributions Guidelines](CONTRIBUTING.md) carefully be
 ---
 | NOTE: |
 | :--- |
-**This series is heavily inspired by YDKJS edition 1 & 2** **[YDKJS GitHub](https://github.com/getify/You-Dont-Know-JS)** By **[Kyle Simpson](https://github.com/getify)**.
+**This series is heavily inspired by YDKJS edition 1 & 2** **[YDKJS GitHub](https://github.com/getify/You-Dont-Know-JS)** By **[Kyle Simpson](https://github.com/getify).**
+
+**Furthermore, This series is hand in hand a work of me and other internet tutorials.**
 
