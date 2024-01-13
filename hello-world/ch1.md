@@ -30,7 +30,6 @@ However when declaring your variables they are certain name conventions that mus
 name1
 AgE
 _user
-11booth
 super_user
 ```
 Now, **Invalid** Variable conventions:
@@ -39,7 +38,10 @@ Now, **Invalid** Variable conventions:
 123
 test!
 user%
+11booth
 ```
+Variables have to start with a letter or an underscore.
+
 Other than that, anything can be used except it is a Python **Keyword**. Some of the Python Keywords are as follows:
 
 ```py
