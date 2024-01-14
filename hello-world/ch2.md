@@ -1,5 +1,5 @@
 # You Don't Know Python Yet
-# Chapter 1: Control Flow, Functions, Lists and iteration!
+# Chapter 2: Control Flow, Functions, Lists and iteration!
 
 
 ### Control Flow
@@ -13,7 +13,7 @@ condition = True
 if condition == True:
     # Do something
 ```
-If the condition is `True`, it's block gets executed. (A block is that part that is indented one level (4 spaces usually) on the right, the block can be formed by a single line, or multiple lines as well, and it ends when you move back to the previous indentation level).
+If the condition is `True`, its block gets executed. (A block is that part that is indented one level (4 spaces usually) on the right, the block can be formed by a single line, or multiple lines as well, and it ends when you move back to the previous indentation level).
 
 In combination with `if` you can have an `else` block, which will be executed if the condition results to `False`.
 
@@ -39,7 +39,19 @@ elif name == "SifuSherif":
 else:
     print("Condition is False")
 ```
-In a if statement you can have just one if and else check, but multiple series of elif checks.
+
+Also:
+
+```py
+name = "SifuSherif"
+
+if name == "SifuSherif":
+    print(f{"Hello, {name}!")
+else:
+    printf("I don't know you")
+```
+
+In an if statement you can have just one if and else check, but multiple series of elif ("Else If") checks.
 
 `if` and `else` can be used in an inline format:
 
@@ -118,6 +130,7 @@ greet("SifuSherif", "Hi") # Hi SifuSherif
 Lists are ordered sequences of elements. They can contain different data types and can be modified after creation. Lists are defined using square brackets [].
 
 ```py
+empty_list = []
 numbers = [1, 2, 3, 4] 
 fruits = ['apple', 'banana', 'mango']
 ```
@@ -160,7 +173,7 @@ Some useful dict methods:
 - pop(key) - removes and returns value for key
 
 ```py
-name = student.get('name')
+name = student.get('name') # returns John
 student.update({'age': 21}) 
 ```
 
